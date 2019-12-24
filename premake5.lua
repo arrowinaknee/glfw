@@ -1,9 +1,12 @@
+PROJPATH = PROJPATH or '' -- the project may store it's binaries in other directory
+print('PROJPATH: \''..PROJPATH..'\'')
+
 project 'GLFW'
     kind 'StaticLib'
     language 'C'
 
-    targetdir ('bin-lib')
-	objdir ('bin-tmp/GLFW')
+    targetdir (PROJPATH .. '/bin-lib')
+	objdir (PROJPATH .. '/bin-tmp/GLFW')
 
 	files
 	{
