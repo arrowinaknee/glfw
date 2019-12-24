@@ -2,7 +2,7 @@ project 'GLFW'
     kind 'StaticLib'
     language 'C'
 
-    targetdir ('bin/GLFW')
+    targetdir ('bin-lib')
 	objdir ('bin-tmp/GLFW')
 
 	files
